@@ -1,0 +1,113 @@
+.navbar-inverse { background-color: #BABABA}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #8AFF8A}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #8AFF8A}
+.dropdown-menu { background-color: #BABABA}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #8AFF8A}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #000000 }
+.navbar-inverse .navbar-brand { color: #000000}
+.navbar-inverse .navbar-brand:hover { color: #000000}
+.navbar-inverse .navbar-nav>li>a { color: #000000}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #000000}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #000000}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #000000}
+.dropdown-menu>li>a { color: #000000}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #000000}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+.conyainer{
+  padding: 10px;
+}
+
+
+.containerbg{
+  background-color: #c5d9f9
+}
+
+
+.banner {
+ height: 100vh;
+
+ /* Flexbox */
+ display: flex;
+ align-items: center;
+}
+
+.well {
+  background-color: #ffffff
+}
+
+
+.container{
+  height: auto;
+    background-color: #c5d9f9
+}
+
+.content{
+background-color: #ffffff
+}
+
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1539639087565-41c59f40f3d7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b42ea8a85b535e29424c78d8d128e83f&auto=format&fit=crop&w=1950&q=80);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+li{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+letter-spacing: 1.2px;
+word-spacing: 0px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+navbar-brand{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+letter-spacing: 1.2px;
+word-spacing: 0px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: center;
+    background-color: #BABABA
+}
+#back-to-top:hover {
+  background-color: #8AFF8A
+}
+#back-to-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 50px;
+    margin: 20px auto;
+}
+
+
+
+.bannerpicture{
+  height: auto;
+  padding: 10px;
+}
