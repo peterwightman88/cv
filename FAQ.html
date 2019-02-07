@@ -6,49 +6,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="C:\Users\Local User\Desktop\Uni\Website Coursework\bootstrap\css\bootstrap.min.css">
+      <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="C:\Users\Local User\Desktop\Uni\Website Coursework\Website-REAL\main.css">.
 
-    <title>Frequently asked questions</title>
+    <!-- My CSS sheet -->
+    <link rel="stylesheet" href="main.css">
+
+    <title>CV Page</title>
   </head>
   <body>
 
-    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="./" class="navbar-brand">PW Software development</a>
-        </div>
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-            <li>
-              <li>
-              <a href="#">Home</a>
-            </li>
-    				<li class="dropdown">
-    	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-    	        <ul class="dropdown-menu">
-    	          <li><a href="#">Project 1</a></li>
-    	          <li><a href="#">Project 2</a></li>
-    	          <li><a href="#">Project 3</a></li>
-    	        </ul>
-    	      </li>
-            <li>
-              <a href="#">CV</a>
-            </li>
-            <li  class="active">
-              <a href="#">FAQ</a>
-            </li>
-            <li>
-              <a href="#">Settings</a>
-            </li>
-          </ul>
-        </nav>
+
+
+    <!--- Page container Properties --->
+
+    <div class='container' style="border:5px solid #a8aaad;">
+
+      <div class="containerbg">
+
+<!--gap above nav bar -->
+        <div class='row'>
+          <div class='col-lg-12' style='height:20px;'>
+          </div>
       </div>
-    </header>
+        <!--- container --->
+
+
+        <!-- navbar -->
+            <div class="row">
+              <header class="navbar navbar-inverse navbardefault bs-docs-nav" role="banner">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+              <!--  <a href="./" class="navbar-brand">PW Software development</a> --> <!-- Brand -->
+              </div>
+              <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                  <li>
+                    <li>
+                    <a href="index.html">Home</a>
+                  </li>
+          				<li class="dropdown">
+          	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+          	        <ul class="dropdown-menu">
+          	          <li><a href="The Matrix Project.html">The Matrix Project</a></li>
+          	          <li><a href="Thought Projection Project.html">Thought Projection Project</a></li>
+          	          <li><a href="Web Development Project.html">Web Development Project</a></li>
+          	        </ul>
+          	      </li>
+                  <li>
+                    <a href="CV.html">CV</a>
+                  </li>
+                  <li>
+                    <a href="contactme.html">Contact</a>
+                  </li>
+                  <li class="active">
+                    <a href="FAQ.html">FAQ</a>
+                  </li>
+
+                </ul>
+
+                <!-- second navbar items (Settings and language)-->
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="settings" href="#"><span class="glyphicon glyphicon-cog"></span></a> <!--Settings glyphicon -->
+                  </li>
+                  <li class="nav-item">
+                    <div id="google_translate_element"></div>   <!-- google TranslateElement -->
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,fr,it,ru,pl,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+          </script>
+                  </li>
+
+                </ul>
+
+                <!-- End of second nav bar items-->
+
+
+              </nav>
+            </div>
+          </header>
+        <!--navbar end-->
+
+
+      <!--Area underneath navbar to display settings-->
+          <div class="row settings-area" hidden>
+            <div class='col-xs-6'>
+              <p> Change background colour  </p>
+                <ul class= "backgroundcolourchanger">
+                  <li id="background-default"> Default </li>             <!--list item to change default to pink -->
+                  <li id="backgroundwhite"> White</li>                   <!--list item to change background to white -->
+                  <li id="backgroundblack"> Black</li>                   <!--list item to change background to black -->
+                </ul>
+            </div>
+            <div class='col-xs-6'>
+              <p> Change Font Size  </p>
+                <ul class= "fontsize">
+                  <li id="fontsize-default"> Default </li>             <!--list item to change default to pink -->
+                  <li id="fontsize-xxl"> Larger </li>        <!--list item to change background to white -->
+                  <li id="fontsize-small">  Smaller</li>         <!--list item to change background to pink -->
+                </ul>
+            </div>
+        </div>
+      <!--Area underneath navbar to display settings end-->
+
+
+
+
+
+<!-- Banner Picture
+<div class="bannerpicture">
+<div class="row">
+  <div
+    class="col-md-12  col-sm-12  col-xs-12 "
+    style="background:red;color:white height:600px; background:url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2059a86937844c84267d5126e5b36aa3&auto=format&fit=crop&w=1050&q=80')"
+>TEXT with background image</div>
+ End Banner Picture -->
+
+<!--content box-->
+<div class="content">
+    <div class="row" style="border:0px solid #a8aaad;">
+          <!-- Need to add theme, buttons -->
+          <div class='col-xs-12' style='height:auto;'>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+    <h1> <center> Frequently Asked Questions </center></h1>
+
+    </br></br>
+    <p>On this page I will try to answer as many frequently asked questions as possible, if I have missed anything out then please feel free to contact me via my contact page and I will update my site to include any questions I may have missed out. </p>
+    </br></br>
+    <h2>How do I change the background colour? </h2>
+    <p>You can change the background colour by click the gear icon on the right hand side of the navigation bar located at the top of the screen. Doing so will open up a drop down bar below the navigation bar, you can then choose one of the background colour options under the ‘background colour’ heading. </p>
+    </br></br>
+    <h2>How can I change the font size? </h2>
+    </br>
+    <p>You can change the background colour by click the gear icon on the right hand side of the navigation bar located at the top of the screen. Doing so will open up a drop down bar below the navigation bar, you can then change the font size by clicking one of the options under the ‘font size’ heading. </p>
+    </br></br>
+    <h2>How can I change the language? </h2>
+    <p>You can change the language by clicking the ‘select language’ button icon on the right hand side of the navigation bar located at the top of the screen. Doing so will open a drop down bar with a number of languages to choose from, click your desired language and then the page will automatically change to the chosen language. </p>
+    </br></br>
+    <h2>How can I be as awesome as you? </h2>
+    <p>Unfortunately, you can’t. Being this awesome took years of practice and it would be nigh on impossible for anybody to replicate this! </p>
+
+
+</div>
+
+          </div>
+    </div>
+
+  </div>
+
+<!--End of page content-->
+
+
+    </div>
+
+
+
+  </div>
+</div>
+        <!-- Start of Back-to-Top link -->
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top pull-right" role="button" title="Click to return to the top of the page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        <!-- End of Back-to-Top link -->
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="js\index.js"></script>
+
+
+  </body>
+</html>

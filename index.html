@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="C:\Users\Local User\Desktop\Uni\Website Coursework\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="C:\Users\Local User\Desktop\Uni\Website Coursework\Website-REAL\main.css">.
 
@@ -48,52 +48,87 @@
           <ul class="nav navbar-nav">
             <li>
               <li class="active">
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
             </li>
     				<li class="dropdown">
     	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
     	        <ul class="dropdown-menu">
-    	          <li><a href="#">The Matrix Project</a></li>
-    	          <li><a href="#">Project 2</a></li>
-    	          <li><a href="#">Project 3</a></li>
+    	          <li><a href="The Matrix Project.html">The Matrix Project</a></li>
+    	          <li><a href="Thought Projection Project.html">Thought Projection Project</a></li>
+    	          <li><a href="Web Development Project.html">Web Development Project</a></li>
     	        </ul>
     	      </li>
             <li>
-              <a href="#">CV</a>
+              <a href="CV.html">CV</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="contactme.html">Contact</a>
             </li>
             <li>
-              <a href="#">FAQ</a>
+              <a href="FAQ.html">FAQ</a>
             </li>
-            <li>
-              <a href="#">Settings</a>
-            </li>
+
           </ul>
+
+          <!-- second navbar items (Settings and language)-->
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="nav-link active" id="settings" href="#"><span class="glyphicon glyphicon-cog"></span></a> <!--Settings glyphicon -->
+            </li>
+            <li class="nav-item">
+              <div id="google_translate_element"></div>   <!-- google TranslateElement -->
+              <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,fr,it,ru,pl,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+    </script>
+            </li>
+
+          </ul>
+
+          <!-- End of second nav bar items-->
+
+
         </nav>
       </div>
     </header>
   <!--navbar end-->
 
 
-<!--gap between nav bar and content-->
-    <div class="row">
-      <div class='col-xs-12' style='height:10px;'>
+<!--Area underneath navbar to display settings-->
+    <div class="row settings-area" hidden>
+      <div class='col-xs-6'>
+        <p> Change background colour  </p>
+          <ul class= "backgroundcolourchanger">
+            <li id="background-default"> Default </li>             <!--list item to change default to pink -->
+            <li id="backgroundwhite"> White</li>                   <!--list item to change background to white -->
+            <li id="backgroundblack"> Black</li>                   <!--list item to change background to black -->
+          </ul>
+      </div>
+      <div class='col-xs-6'>
+        <p> Change Font Size  </p>
+          <ul class= "fontsize">
+            <li id="fontsize-default"> Default </li>             <!--list item to change default to pink -->
+            <li id="fontsize-xxl"> Larger </li>        <!--list item to change background to white -->
+            <li id="fontsize-small">  Smaller</li>         <!--list item to change background to pink -->
+          </ul>
       </div>
   </div>
+<!--Area underneath navbar to display settings end-->
 
 <!-- Video banner -->
+<div class="container-video">
+    <video id="video"  autoplay="autoplay" muted="muted" loop="loop">
+        <source src="Videos\Pexels blurred video banner.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay-video">
+        <h1>Peter Wightman</h1>
+        <h2>Software Development</h2>
 
-<!-- video banner end -->
-
-  <div class=”banner”>
- <h1>Big Title</h1>
+    </div>
 </div>
-
-
-
-
+<!-- video banner end -->
 
 
 <!--content box-->
@@ -104,32 +139,97 @@
 
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                </br>
+                <center><h1>Welcome to my site! </h1></center>
+    </br></br>
 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mauris et molestie lobortis, erat sem ultricies lorem, sed cursus urna eros ut felis. Cras maximus lorem eu augue condimentum placerat. Curabitur rhoncus erat vitae tortor mollis condimentum. Sed vestibulum tristique velit. Nullam non dui sed nibh porta feugiat. Praesent a massa erat. Phasellus et pulvinar nunc, a feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hendrerit odio a sapien dapibus, sed euismod est molestie. Aenean et dui at nibh egestas semper eu id lorem. Aliquam nulla enim, aliquam id urna sit amet, placerat pellentesque neque.
+    <p>I’ve built this website as part of an ongoing project to promote myself as a software developer in hope of generate some interest from potential employers and project leaders who may be interested in hiring me. </p>
+    </br>
+    <p>I am proud to have worked on some very adventurous projects in the past and I have included details of these on my individual project pages. As you will see, these projects are pretty outrageous and some have even questioned the morality of them! </p>
+    </br>
+    <p>I have included a page with a copy of my C.V. which you can feel free to browse before consulting me for further details. </p>
+    </br>
+    <p>If you have any questions about anything on my site or about me then feel free to leave me a message on my contact page, I will do my best to respond to all messages as soon as possible. </p>
+    </br>
+    <p>I hope you enjoy my site and I look forward to potentially speaking to some of you in the near future! </p>
+    </br></br>
 
-Sed pulvinar at risus sit amet mollis. Nunc porta orci quis felis vestibulum placerat sollicitudin viverra purus. Pellentesque sit amet dapibus metus, eget fringilla velit. Nunc nec faucibus nulla. Suspendisse commodo velit at mauris venenatis, non tincidunt mi sollicitudin. Mauris id ultrices risus. Curabitur condimentum viverra metus id venenatis. Cras suscipit mi quis rhoncus ultrices.
+    <center><h2> A little about me </h2></center>
+    </br></br>
+    <p>I grew up in a small town outside of Newcastle called Hebburn and I spent most of my adult life working for a local council in a town close to where I grew up back home. But last year I made a decision that I wanted a change in career and decided to enrol at Robert Gordon University where I am currently studying towards a bachelor’s degree in cyber security. </p>
+  </br>
+  <p>I’m a very keen gamer and play a number of games competitively. I currently enjoy playing counterstrike Global Offensive to a very high competitive standard, whilst this is very stressful it is also very rewarding when you win! If anybody out there is reading this and would like to challenge me then feel free to drop a message! </p>
+</br>
+<p>I also follow a keen interest in health and fitness and regularly play football, go to the gym almost every day and enjoy rock climbing! I feel in doing these things I prevent the inner potato in me from breaking free! </p>
+</br></br>
 
-Vestibulum ut erat ipsum. Maecenas mollis pharetra odio eu tempor. Phasellus vehicula eleifend dui, id aliquet lacus luctus at. Aenean imperdiet elementum viverra. Vivamus porttitor lacus at egestas molestie. Pellentesque tellus sem, vulputate vel ullamcorper nec, hendrerit eu ipsum. Nam dapibus eros metus, ut ullamcorper ligula dictum eget. Integer at felis felis. Nunc aliquet vel magna vel pretium. Suspendisse ullamcorper nisl ac diam dictum, nec molestie sem volutpat. Etiam fermentum magna at cursus dictum. Donec pulvinar dictum vestibulum. Nunc blandit, lacus a blandit rhoncus, ipsum felis volutpat felis, vel blandit dolor lectus vitae sem. Cras porta congue quam, quis placerat mi molestie non.
 
-Aenean quis mi at purus malesuada vehicula vel vel sapien. Vestibulum consequat elementum commodo. Donec aliquet velit ex, sed rutrum mi accumsan sit amet. Cras porta, lorem sit amet scelerisque sollicitudin, nibh arcu condimentum eros, dapibus interdum felis ligula vitae ante. Quisque at dui rutrum orci consectetur maximus. Fusce sollicitudin blandit tellus, et vulputate erat faucibus ac. Sed eu arcu id ligula laoreet maximus id rutrum nunc. Ut a tincidunt turpis. In eget nisl lacus. Nam dapibus lectus non odio sodales tincidunt. Etiam sollicitudin venenatis odio, eget pellentesque turpis tincidunt sed. Nam ut pulvinar nunc. Nullam varius lacus sit amet varius tincidunt. Aliquam erat volutpat.
 
-Vestibulum in nisi felis. Donec suscipit aliquet finibus. Aenean sit amet convallis ante, in auctor lacus. Aliquam ut leo sapien. Pellentesque lacinia malesuada purus, sed ullamcorper tellus cursus eu. Nulla malesuada est vitae turpis condimentum dignissim. Mauris posuere aliquam odio scelerisque rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-            </div>
+        </div>
 
-          </div>
+
+
     </div>
 
   </div>
 
+  <!--about me table -->
+  <div class="row" style="border:0px solid #a8aaad;">
+    <!-- Start OF TABLE COLLUMN -->
+        <div class='col-sm-6 col-sm-offset-3 text-center' style='height:auto;'>
+<!--about me table -->
+  <table class="table table-striped table-bordered col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+
+    <tbody>
+      <tr>
+        <th scope="row">Name</th>
+        <td>Peter Wightman</td>
+      </tr>
+      <tr>
+        <th scope="row">Age</th>
+        <td>30 (08/04/1988)</td>
+      </tr>
+      <tr>
+        <th scope="row">Interests</th>
+        <td>Hiking, Gym, Gaming, Computing, Football, Cinema, Gigs</td>
+      </tr>
+      <tr>
+        <th scope="row">Favourite Food</th>
+        <td>Pizza and tapas</td>
+      </tr>
+      <tr>
+        <th scope="row">Favourite Music</th>
+        <td>Metal, Drum and Bass, Punk, Ska, Italian Hardcore</td>
+      </tr>
+      <tr>
+        <th scope="row">Location</th>
+        <td>Aberdeen</td>
+      </tr>
+      <tr>
+        <th scope="row">Discord</th>
+        <td>RUSTYTROMBONE3#2008</td>
+      </tr>
+    </tbody>
+  </table>
+<!--End of about me table -->
+</div>
+<!-- END OF TABLE COLLUMN -->
+
+  </div>
+
+</br>
+
+</div>
+
+  <!--end of about me table -->
+
+
 
     </div>
-
-
-
   </div>
 
         <!-- Start of Back-to-Top link -->
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top pull-right" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top pull-right" role="button" title="Click to return to the top of the page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
         <!-- End of Back-to-Top link -->
 
 
@@ -139,5 +239,10 @@ Vestibulum in nisi felis. Donec suscipit aliquet finibus. Aenean sit amet conval
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="js\index.js"></script>
+
+
   </body>
 </html>

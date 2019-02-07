@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="C:\Users\Local User\Desktop\Uni\Website Coursework\bootstrap\css\bootstrap.min.css">
+      <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="C:\Users\Local User\Desktop\Uni\Website Coursework\Website-REAL\main.css">.
 
@@ -32,58 +32,91 @@
       </div>
         <!--- container --->
 
-  <!-- navbar -->
-      <div class="row">
-        <header class="navbar navbar-inverse navbardefault bs-docs-nav" role="banner">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-        <!--  <a href="./" class="navbar-brand">PW Software development</a> --> <!-- Brand -->
+
+        <!-- navbar -->
+            <div class="row">
+              <header class="navbar navbar-inverse navbardefault bs-docs-nav" role="banner">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+              <!--  <a href="./" class="navbar-brand">PW Software development</a> --> <!-- Brand -->
+              </div>
+              <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                  <li>
+                    <li>
+                    <a href="index.html">Home</a>
+                  </li>
+          				<li class="dropdown">
+          	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+          	        <ul class="dropdown-menu">
+          	          <li><a href="The Matrix Project.html">The Matrix Project</a></li>
+          	          <li><a href="Thought Projection Project.html">Thought Projection Project</a></li>
+          	          <li><a href="Web Development Project.html">Web Development Project</a></li>
+          	        </ul>
+          	      </li>
+                  <li class="active">
+                    <a href="CV.html">CV</a>
+                  </li>
+                  <li>
+                    <a href="contactme.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="FAQ.html">FAQ</a>
+                  </li>
+
+                </ul>
+
+                <!-- second navbar items (Settings and language)-->
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="settings" href="#"><span class="glyphicon glyphicon-cog"></span></a> <!--Settings glyphicon -->
+                  </li>
+                  <li class="nav-item">
+                    <div id="google_translate_element"></div>   <!-- google TranslateElement -->
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,fr,it,ru,pl,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+          </script>
+                  </li>
+
+                </ul>
+
+                <!-- End of second nav bar items-->
+
+
+              </nav>
+            </div>
+          </header>
+        <!--navbar end-->
+
+
+      <!--Area underneath navbar to display settings-->
+          <div class="row settings-area" hidden>
+            <div class='col-xs-6'>
+              <p> Change background colour  </p>
+                <ul class= "backgroundcolourchanger">
+                  <li id="background-default"> Default </li>             <!--list item to change default to pink -->
+                  <li id="backgroundwhite"> White</li>                   <!--list item to change background to white -->
+                  <li id="backgroundblack"> Black</li>                   <!--list item to change background to black -->
+                </ul>
+            </div>
+            <div class='col-xs-6'>
+              <p> Change Font Size  </p>
+                <ul class= "fontsize">
+                  <li id="fontsize-default"> Default </li>             <!--list item to change default to pink -->
+                  <li id="fontsize-xxl"> Larger </li>        <!--list item to change background to white -->
+                  <li id="fontsize-small">  Smaller</li>         <!--list item to change background to pink -->
+                </ul>
+            </div>
         </div>
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-            <li>
-              <li class="active">
-              <a href="#">Home</a>
-            </li>
-    				<li class="dropdown">
-    	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-    	        <ul class="dropdown-menu">
-    	          <li><a href="#">The Matrix Project</a></li>
-    	          <li><a href="#">Project 2</a></li>
-    	          <li><a href="#">Project 3</a></li>
-    	        </ul>
-    	      </li>
-            <li>
-              <a href="#">CV</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">FAQ</a>
-            </li>
-            <li>
-              <a href="#">Settings</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  <!--navbar end-->
-
-
-<!--gap between nav bar and content-->
-    <div class="row">
-      <div class='col-xs-12' style='height:5px;'>
-      </div>
-  </div>
-
-<!-- End of gap -->
+      <!--Area underneath navbar to display settings end-->
 
 
 
@@ -96,7 +129,7 @@
     class="col-md-12  col-sm-12  col-xs-12 "
     style="background:red;color:white height:600px; background:url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2059a86937844c84267d5126e5b36aa3&auto=format&fit=crop&w=1050&q=80')"
 >TEXT with background image</div>
-<!-- End Banner Picture -->
+ End Banner Picture -->
 
 <!--content box-->
 <div class="content">
@@ -113,23 +146,25 @@
     <main>
       <section>
         <h2><center> Employment history </center></h2>
-        <h3>South Tyneside Homes – Handy Estates Operative</h3>
+        <br />
+        <h3><center>South Tyneside Homes – Handy Estates Operative</center></h3>
 
-<p>January 2013 – August 2018<br />
+<p><center>January 2013 – August 2018</center></p><br />
 
-<br /> <br /> •	For the last four years I have been employed by South Tyneside Homes where my general day to day responsibilities involve various elements of grounds maintenance work such as weeding, grass cutting and hedge trimming. Also, my daily duties include numerous tasks from the environmental service background such as litter picking, emptying bins, clearing faecal matter and the removal of dead animals.
+<p><br /> •	For the last four years I have been employed by South Tyneside Homes where my general day to day responsibilities involve various elements of grounds maintenance work such as weeding, grass cutting and hedge trimming. Also, my daily duties include numerous tasks from the environmental service background such as litter picking, emptying bins, clearing faecal matter and the removal of dead animals.
 <br /> <br />  •	Acting in a supervisory role to street sweepers and overseeing work quality and verifying satisfactory meeting of company and regulation standards. Organizing workflow and ensure that employees understand their duties or delegated tasks.
 <br /> <br />  •	I was expected to work flexibly and outside of normal contracted hours to help mitigate emergencies, such as the effects of adverse weather conditions or large car crashes.
-<br /> <br />  •	Receiving and responding to issues raised by general public and responding to them in a timely fashion. These ranged from
+<br /> <br />  •	Receiving and responding to issues raised by general public and responding to them in a timely fashion.
 <br /> <br />  •	It has been my responsibility to manage workloads successfully and independently, this also includes when I have been asked to participate in numerous projects on top of my normal work load. For example, last month I had to liaise with the youth recreational team who were helping participate in the general clean-up of the Horsley Hill area. It was my duty to provide any assistance I could to the team by providing tools, supervision and arrange the removal of any waste bags they left behind. The experience of managing different work projects and helping supervise different teams has been personally very fulfilling and I feel would be essential in helping me adjust to a new role should I be successful.
 <br /> <br />  •	Working within a close knit team was a daily responsibility and I was expected to liaise between senior management and team members who I was supervising. I was also expected to liaise between senior management and emergency services, different in house teams and external companies. I feel that in performing these duties I have earned essential experience and skills in team working. It was also essential at times for me to work independently and to use my initiate when required.
 <br /><br />  •	It was essential for me to diversify my communication for a variety of different people. For example, senior management, staff members I was supervising, external companies and members of the public also.
-<p>
+</p>
+  <br />
 
-<h3> South Tyneside Council – Market Operations Supervisory Assistant </h3>
-<p>January 2008 – January 2013<br />
+<h3><center> South Tyneside Council – Market Operations Supervisory Assistant</center> </h3>
+<p><center>January 2008 – January 2013</center><br /></p>
 
-<br /> <br /> •	My central responsibilities at South Tyneside Council were to provide professional customer service to market traders and the general public alike, whilst maintaining and managing the market to a professional standard. Maintenance involved the repairing of wooden boards, replacing damaged parts on condemned stalls and repairing of ripped or torn stall canopies.
+<p><br /> •	My central responsibilities at South Tyneside Council were to provide professional customer service to market traders and the general public alike, whilst maintaining and managing the market to a professional standard. Maintenance involved the repairing of wooden boards, replacing damaged parts on condemned stalls and repairing of ripped or torn stall canopies.
 <br /> <br /> •	I was also expected to have a competent understanding of numeracy and literacy due to the supervisory aspect of my role, whereby I had to collect stall holder rent money, bank it and then complete various associated admin tasks.
 <br /> <br /> •	The experience of working in a close knit team has also allowed me to develop efficient team-working skills. These skills, alongside my communicational abilities are necessary, as on a daily basis there are set amounts of work to be completed, which allowed us to meet daily deadlines. As part of a team, I am responsible for ensuring market construction is complete by the 6am deadline, whilst also ensuring the site is Health and Safety compliant prior to trader arrival.  This process requires a coordinated approach and as such draws upon my effective communication and team working skills to ensure this is completed to a high standard and in an efficient manner.
 <br /> <br /> •	Ensuring local policies were followed and legal requirements were consistently met through ensuring all traders have adequate and up to date public liability insurance. This is generally a face to face exchange, although it was also common for me to liaise via email or telephone.
@@ -137,33 +172,33 @@
 <br /> <br /> •	I have worked flexibly and outside of usual contracted hours to help mitigate emergencies, such as the effects of adverse weather conditions. An example of this is during an instance last year where I assisted in the filling and distribute of sand bags to the general public to prevent flooding due to extreme rainy conditions.
 <br /> <br /> •	I have a depth of knowledge and leadership skills such that I was previously entrusted with coordinating and supervising a team of four agency staff on Great North Run day. My task was to guide my team as to council protocol and to efficiently direct them to assist in making sure the course was both safe and clean for runners.
 <br /> <br /> •	I am constantly looking to further myself whether it be in education, general knowledge or self preservation and my time with South Tyneside Council has been no different, during this employment I  have took part and completed a first aid course as well numerous other work related courses.
-<p>
+</p>
 
-
+<br />
   <section>
     <h2><center>Education history</center></h2>
-    <h3>Hebburn Comprehensive School</h3>
-      <p>September 1999 – August 2004<br />
+    <h3><center>Hebburn Comprehensive School</center></h3>
+      <p><center>September 1999 – August 2004</center> </p> <br />
 
-			<br />GCSE<br />
-Six GCSE’s at grade C or above (Including Maths, Science and English)<br />
+<center>Six GCSE’s at grade C or above (Including Maths, Science and English)</center></p><br />
 
-<h3>Westgate Community College</h3>
-<p>September 2011 – June 2013<br />
+<h3><center>Westgate Community College</h3>
+<p><center>September 2011 – June 2013<br />
 
-<br />HEFC (A Level equivalent)
-<br /> Business Studies			Distinction
-<br />Information Technology			Distinction
-<br />Quantative Methods (maths)		Merit
+<p><br /><center>HEFC's (A Level equivalent)</center>
+<br /><center> Business Studies			Distinction</center>
+<br /><center>Information Technology			Distinction</center>
+<br /><center>Quantative Methods (Maths)		Merit</center>
+</p>
 
-
+<br />
 <h2><center> Hobbies and Interests </center></h2>
-<p>
-I have a keen interest in outdoor pursuits and regularly participate in many outdoor sports, ranging from playing football to rock climbing and hiking. Such activities, I have found, not only give me an immense sense of personal achievement but encourage me to develop greater stamina, teamwork skills and leadership qualities.
-<p>
+<p>I have a keen interest in outdoor pursuits and regularly participate in many outdoor sports, ranging from playing football to rock climbing and hiking. Such activities, I have found, not only give me an immense sense of personal achievement but encourage me to develop greater stamina, teamwork skills and leadership qualities.
+</p>
 
+<br />
   <h2><center> References</center></h2>
-  <p> Available upon request <p>
+  <p><center> Available upon request </center></p>
 
 </div>
 
@@ -182,15 +217,20 @@ I have a keen interest in outdoor pursuits and regularly participate in many out
   </div>
 </div>
         <!-- Start of Back-to-Top link -->
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top pull-right" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top pull-right" role="button" title="Click to return to the top of the page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
         <!-- End of Back-to-Top link -->
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="js\index.js"></script>
+
+
   </body>
 </html>
